@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SHAYRANA</string>
+    <string name="todo">TODO</string>
+    <string name="success_always_comes_from_taking_calculated_risks">SUCCESS ALWAYS COMES FROM TAKING CALCULATED RISKS</string>
 </resources>
