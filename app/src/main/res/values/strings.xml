@@ -50,6 +50,9 @@
     <string name="otp_auth">OTP AUTH</string>
     <string name="V">VERIFICATION</string>
     <string name="mobile_number">Mobile Number</string>
+    <string name="N">NEXT</string>
     <string name="next">NEXT</string>
+    <string name="NE">NEXT</string>
+    <string name="thank_you_so_much">THANK YOU SO MUCH!!!!</string>
 
 </resources>

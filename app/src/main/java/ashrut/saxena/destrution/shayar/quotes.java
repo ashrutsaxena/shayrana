@@ -1,6 +1,9 @@
 package ashrut.saxena.destrution.shayar;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -17,6 +20,7 @@ public class quotes extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private List<ListItem> listItems;
+    Button next;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,9 @@ public class quotes extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        next = findViewById(R.id.button7);
+
+
 
         listItems = new ArrayList<>();
         ListItem item1 = new ListItem("SHAYARI", "PASSION IN MY MIND, WANTED TO DO SOMETHING GREAT THE PEOPLE WHO ARE SAYING ANYTHING BEHIND MY BACK  WANTED TO SHUT THEMSELVES WITH MY GREAT WORK", "");
@@ -141,5 +148,13 @@ public class quotes extends AppCompatActivity {
         // }
         adapter = new MyAdapter(this, listItems);
         recyclerView.setAdapter(adapter);
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(quotes.this, last.class));
+            }
+        });
+
     }
 }
